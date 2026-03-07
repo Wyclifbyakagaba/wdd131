@@ -1,15 +1,10 @@
-// Get current year
-const currentYear = document.querySelector("#currentyear");
+const year = document.querySelector("#currentyear");
+const modified = document.querySelector("#lastModified");
 
-// Get last modified element
-const lastModified = document.querySelector("#lastModified");
-
-// Insert current year
-if (currentYear) {
-currentYear.textContent = new Date().getFullYear();
+if (year) {
+year.textContent = new Date().getFullYear();
 }
 
-// Insert last modified date
-if (lastModified) {
-lastModified.textContent = "Last Modified: " + document.lastModified;
+if (modified) {
+modified.textContent = "Last Modified: " + document.lastModified;
 }
