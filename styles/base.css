@@ -1,0 +1,66 @@
+body{
+font-family: Arial, sans-serif;
+margin:0;
+padding:0;
+background:#f4f4f4;
+}
+
+header{
+background:#003366;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+#course-title{
+display:block;
+font-size:24px;
+margin-bottom:10px;
+}
+
+nav{
+display:flex;
+justify-content:center;
+gap:20px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+padding:8px;
+}
+
+nav a:hover{
+background:white;
+color:#003366;
+border-radius:5px;
+}
+
+main{
+max-width:900px;
+margin:auto;
+padding:20px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+
+.card{
+background:white;
+padding:15px;
+border-radius:8px;
+box-shadow:0 0 5px rgba(0,0,0,0.2);
+}
+
+.card img{
+width:100%;
+height:auto;
+}
+
+footer{
+text-align:center;
+padding:15px;
+background:#003366;
+color:white;
+margin-top:20px;
+}
