@@ -1,21 +1,11 @@
-@media (min-width: 768px){
+@media (min-width: 768px) {
+  nav ul.navigation {
+    display: flex;           /* Flexbox */
+    justify-content: center; /* Center the menu horizontally */
+    gap: 2rem;               /* Space between menu items */
+  }
 
-#menu{
-display:none;
-}
-
-.navigation{
-display:flex;
-justify-content:center;
-gap:25px;
-}
-
-.navigation li{
-display:block;
-}
-
-.gallery{
-grid-template-columns: repeat(3, 1fr);
-}
-
+  nav ul.navigation li {
+    margin: 0;               /* Remove vertical spacing for flex row */
+  }
 }

@@ -18,14 +18,17 @@ color:white;
 cursor:pointer;
 }
 
-.navigation{
+nav ul.navigation{   
 list-style:none;
 padding:0;
 margin:0;
+display:none;          /* hidden by default */
+flex-direction:column;
 }
 
-.navigation li{
-display:none;
+/* SHOW MENU WHEN OPEN */
+nav ul.navigation.open{
+display:flex;
 }
 
 .navigation a{
@@ -39,9 +42,7 @@ text-decoration:none;
 background:#345d8a;
 }
 
-.open li{
-display:block;
-}
+
 
 main{
 max-width:900px;
@@ -49,11 +50,7 @@ margin:auto;
 padding:1rem;
 }
 
-.gallery{
-display:grid;
-grid-template-columns:1fr;
-gap:1rem;
-}
+
 
 figure{
 margin:0;
