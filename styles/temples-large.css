@@ -1,21 +1,26 @@
+/* ======== temples-large.css (Desktop Layout) ======== */
+
 @media (min-width: 768px) {
+  /* Hide hamburger button on desktop */
+  #menu {
+    display: none;
+  }
 
-#menu{
-display:none;
-}
+  /* Navigation menu horizontal using Flexbox */
+  nav ul.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
 
-nav ul.navigation{
-display:flex;
-justify-content:center;
-gap:2rem;
-}
+  nav ul.navigation li {
+    margin: 0;
+  }
 
-nav ul.navigation li{
-display:block;
-}
-
-.gallery{
-grid-template-columns: repeat(3, 1fr);
-}
-
+  /* Gallery grid: 3 columns on desktop */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
 }
