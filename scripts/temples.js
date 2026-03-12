@@ -1,10 +1,19 @@
-const menuButton = document.querySelector("#menu");
-const navigation = document.querySelector(".navigation");
+// Footer dates
+const year = document.querySelector("#currentyear");
+const modified = document.querySelector("#lastModified");
 
-menuButton.addEventListener("click", () => {
-navigation.classList.toggle("open");
-menuButton.classList.toggle("open");
+if (year) {
+  year.textContent = new Date().getFullYear();
+}
+
+if (modified) {
+  modified.textContent = "Last Modified: " + document.lastModified;
+}
+
+// Hamburger menu
+const menu = document.querySelector("#menu");
+const nav = document.querySelector(".navigation");
+
+menu.addEventListener("click", () => {
+  nav.classList.toggle("open");
 });
-
-document.querySelector("#year").textContent = new Date().getFullYear();
-document.querySelector("#lastModified").textContent = document.lastModified;
