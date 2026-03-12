@@ -1,16 +1,10 @@
-// Footer dates
-const year = document.querySelector("#currentyear");
-const modified = document.querySelector("#lastModified");
+// Current Year
+document.querySelector("#currentYear").textContent = new Date().getFullYear();
 
-if (year) {
-  year.textContent = new Date().getFullYear();
-}
+// Last Modified
+document.querySelector("#lastModified").textContent = document.lastModified;
 
-if (modified) {
-  modified.textContent = "Last Modified: " + document.lastModified;
-}
-
-// Hamburger menu
+// Hamburger Menu
 const menu = document.querySelector("#menu");
 const nav = document.querySelector(".navigation");
 
