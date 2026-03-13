@@ -13,10 +13,7 @@
     gap: 2rem;
   }
 
-  nav ul.navigation li {
-    margin: 0;
-  }
-
+  
   /* Gallery grid: 3 columns on desktop */
   .gallery {
     display: grid;
