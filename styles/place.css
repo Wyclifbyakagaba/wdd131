@@ -1,0 +1,44 @@
+:root {
+  --primary-color: #1d3557;
+  --accent-color: #e63946;
+  --background-color: #f1faee;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: var(--background-color);
+}
+
+header {
+  background: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  padding: 1rem;
+}
+
+picture img {
+  width: 100%;
+  height: auto;
+}
+
+/* MOBILE WEATHER ICON */
+.mobile-only {
+  display: block;
+}
+
+/* DESKTOP VIEW */
+@media (min-width: 768px) {
+  .mobile-only {
+    display: none;
+  }
+
+  /* PSEUDO-ELEMENT EMOTICON */
+  .weather h2::after {
+    content: " ⛅";
+  }
+}
