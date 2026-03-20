@@ -70,15 +70,32 @@ section h2 {
   margin-bottom: 1rem;
 }
 
+/* WEATHER SECTION */
 .weather {
   text-align: center;
   margin-top: 2rem;
 }
 
+/* Standard weather image */
 .weather-img {
   width: 100px;
   height: auto;
   margin-bottom: 1rem;
+}
+
+/* Mobile-friendly weather image */
+.weather-img,
+.weather picture img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* center on mobile */
+}
+
+/* Optional: spacing for text */
+.weather p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem; /* mobile-friendly text */
 }
 
 /* FOOTER */
