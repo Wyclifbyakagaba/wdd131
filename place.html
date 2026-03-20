@@ -3,8 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Discover Kampala, Uganda</title>
-  <meta name="author" content="wycliff Byakagaba">
+
+  <!-- SEO -->
+  <meta name="description" content="Explore Kampala, Uganda’s vibrant capital city, featuring culture, weather, and attractions.">
+  <meta name="author" content="Wycliff Byakagaba">
+
   <link rel="stylesheet" href="css/place.css">
   <script src="js/place.js" defer></script>
 </head>
@@ -17,11 +22,11 @@
 
 <main>
 
-  <!-- HERO IMAGE (Responsive WebP) -->
+  <!-- HERO IMAGE -->
   <picture>
-    <source srcset="images/kampala-small.webp" media="(max-width: 500px)">
-    <source srcset="images/kampala-medium.webp" media="(max-width: 1000px)">
-    <img src="images/kampala-city.jpg" alt="Kampala city view">
+    <source srcset="images/kampala-small.webp" media="(max-width: 500px)" type="image/webp">
+    <source srcset="images/kampala-medium.webp" media="(max-width: 1000px)" type="image/webp">
+    <img src="images/kampala-city.jpg" alt="Kampala city view" loading="lazy">
   </picture>
 
   <!-- ABOUT -->
@@ -33,7 +38,12 @@
   <!-- WEATHER -->
   <section class="weather">
     <h2>Weather</h2>
-    <img src="images/weather.svg" alt="weather icon" class="weather-icon">
+
+    <!-- SVG (mobile only via CSS) -->
+    <svg class="weather-icon" viewBox="0 0 24 24" aria-label="weather icon">
+      <circle cx="12" cy="12" r="5" fill="orange"/>
+    </svg>
+
     <p>Temperature: <span id="temp">45</span>°F</p>
     <p>Wind Speed: <span id="wind">5</span> mph</p>
     <p>Wind Chill: <span id="windchill"></span></p>

@@ -7,38 +7,83 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background: var(--background-color);
+  background-color: var(--background-color);
+  color: #000;
+  line-height: 1.6;
 }
 
+/* Header */
 header {
-  background: var(--primary-color);
-  color: white;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 1rem;
   text-align: center;
-  padding: 1rem;
 }
 
+/* Main layout */
 main {
+  max-width: 900px;
+  margin: 0 auto;
   padding: 1rem;
 }
 
+/* Sections */
+section {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 8px;
+}
+
+/* Headings */
+h1, h2 {
+  margin: 0.5rem 0;
+}
+
+/* Responsive image */
 picture img {
   width: 100%;
   height: auto;
-}
-
-/* MOBILE WEATHER ICON */
-.mobile-only {
   display: block;
+  border-radius: 8px;
 }
 
-/* DESKTOP VIEW */
+/* Weather section */
+.weather {
+  text-align: center;
+}
+
+/* ✅ SVG Weather icon (mobile ONLY) */
+.weather-icon {
+  width: 60px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ❌ Hide SVG on desktop */
 @media (min-width: 768px) {
-  .mobile-only {
+  .weather-icon {
     display: none;
   }
+}
 
-  /* PSEUDO-ELEMENT EMOTICON */
+/* ✅ Emoticon (desktop ONLY) */
+.weather h2::after {
+  content: " ☀️";
+  display: none;
+}
+
+@media (min-width: 768px) {
   .weather h2::after {
-    content: " ⛅";
+    display: inline;
   }
-}o
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
