@@ -1,10 +1,11 @@
-/* Reset */
+/* ================= RESET ================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* ================= BODY ================= */
 body {
   font-family: Arial, sans-serif;
   color: #fff;
@@ -12,7 +13,7 @@ body {
   line-height: 1.5;
 }
 
-/* HERO SECTION */
+/* ================= HERO SECTION ================= */
 .hero {
   position: relative;
   height: 60vh;
@@ -31,13 +32,13 @@ body {
   display: block;
 }
 
-/* Semi-transparent blue overlay */
+/* Overlay */
 .hero-overlay {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(0, 128, 255, 0.6); /* semi-transparent blue */
+  background-color: rgba(0, 128, 255, 0.6);
   padding: 2rem 2.5rem;
   border-radius: 10px;
   text-align: center;
@@ -59,10 +60,15 @@ body {
   margin: 0 auto;
 }
 
-/* MAIN CONTENT */
+/* ================= MAIN ================= */
 main {
   padding: 2rem;
   background-color: #222;
+}
+
+/* Sections */
+section {
+  margin-bottom: 2rem;
 }
 
 section h2 {
@@ -70,37 +76,29 @@ section h2 {
   margin-bottom: 1rem;
 }
 
-/* WEATHER SECTION */
+/* ================= WEATHER ================= */
 .weather {
   text-align: center;
-  margin-top: 2rem;
 }
 
-/* Standard weather image */
-.weather-img {
-  width: 100px;
-  height: auto;
-  margin-bottom: 1rem;
-}
-
-/* Mobile-friendly weather image */
+/* Image */
 .weather-img,
 .weather picture img {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto; /* center on mobile */
+  margin: 0 auto;
 }
 
-/* Optional: spacing for text */
+/* Text */
 .weather p {
   margin: 0.25rem 0;
-  font-size: 0.9rem; /* mobile-friendly text */
+  font-size: 0.95rem;
 }
 
-/* FOOTER */
+/* ================= FOOTER ================= */
 footer {
-  background-color: #1E90FF; /* solid blue footer */
+  background-color: #1E90FF;
   color: #fff;
   padding: 1.5rem 2rem;
   border-top: 2px solid #444;
@@ -118,22 +116,35 @@ footer {
   text-align: center;
 }
 
-/* RESPONSIVE */
+/* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
+
+  .hero {
+    height: 50vh;
+  }
+
+  .hero-overlay {
+    padding: 1.5rem;
+  }
+
   .hero-overlay h1 {
     font-size: 2rem;
   }
+
   .hero-overlay p {
     font-size: 1rem;
   }
+
   .hero-line {
     width: 40px;
     border-width: 1.5px;
   }
+
   .weather-img {
     width: 70px;
   }
-  .footer-content {
-    padding: 0.5rem;
+
+  main {
+    padding: 1rem;
   }
 }
