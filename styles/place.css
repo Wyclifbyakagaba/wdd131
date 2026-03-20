@@ -1,9 +1,9 @@
 /* ROOT VARIABLES */
 :root {
   --primary-color: #1d3557;
-  --accent-color: #e63946;
+  --white:#ffffff;
   --background-color: #f1faee;
-  --text-color: #000;
+  --text-color: #000000;
 }
 
 /* RESET */
@@ -23,7 +23,7 @@ body {
 /* HEADER */
 header {
   background: var(--primary-color);
-  color: white;
+  color: var(--white);
   padding: 1rem;
   text-align: center;
 }
@@ -39,7 +39,7 @@ main {
 
 /* SECTIONS */
 section {
-  background: white;
+  background:var(--white);
   padding: 1rem;
   border-radius: 8px;
 }
