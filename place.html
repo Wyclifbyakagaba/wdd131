@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>My country, Uganda</title>
+  <title>Uganda</title>
 
   <!-- SEO -->
   <meta name="description" content="Explore Kampala, Uganda’s vibrant capital city, featuring culture, weather, and attractions.">
@@ -16,51 +15,58 @@
 
 <body>
 
-<header>
-  <h1>My country, Uganda</h1>
-</header>
-
-<main>
 
   <!-- HERO IMAGE -->
-  <picture>
-    <source srcset="images/uganda-small.webp" media="(max-width: 500px)" type="image/webp">
-    <source srcset="images/uganda-medium.webp" media="(max-width: 1000px)" type="image/webp">
-    <img src="images/uganda.jpg" alt="Uganda peral of africa view" loading="lazy">
-  </picture>
-
-  <!-- ABOUT -->
-  <section>
-    <h2>About Uganda</h2>
-    <p>Area: <span id="area">1,000 km²</span></p>
-    <p>Population: <span id="population">1,500,000</span></p>
-    <p>Capital: <span id="capital">Kampala</span></p>
-    <p>Languages: <span id="languages">English,Runyoro-Kitala,luganda,Acholi,kiswahili,Rusonga</span></p>
-    <p>Currency: <span id="curreny">Shillings</span></p>
-    <p>Calling code: <span id="callingCode">+256</span></p>
-    <p>Time zone:<span id="Time zone">EAC</span></p>
-    <p>Internet TLD: <span id="internet">mg</span></p>
-    </section>
-
-
-
-
-  <!-- WEATHER ---SVG (mobile only via CSS) -->
-  <section class="weather">
-   <h2>Weather</h2>
-   <svg class="weather-icon" viewBox="0 0 24 24" aria-label="weather icon">
-      <circle cx="12" cy="12" r="5" fill="orange"/></svg>
-   <p>Temperature: <span id="temp">45</span>°F</p>
-    <p>Wind Speed: <span id="wind">5</span> mph</p>
-    <p>Wind Chill: <span id="windchill"></span></p>
+  <section class="hero">
+    <picture>
+      <source srcset="images/uganda-small.webp" media="(max-width: 500px)" type="image/webp">
+      <source srcset="images/uganda-medium.webp" media="(max-width: 1000px)" type="image/webp">
+      <img src="images/uganda-large.jpg" alt="Uganda landscape" class="hero-img" loading="lazy">
+    </picture>
+    <div class="hero-overlay">
+      <h1>Uganda</h1>
+      <p>The Pearl of Africa</p>
+      <hr class="hero-line">
+    </div>
   </section>
 
-</main>
+  <!-- MAIN CONTENT -->
+  <main>
 
-<footer>
-  <p>&copy; <span id="year">march/20th/2026</span></p>
-  <p>Last Modified: <span id="lastModified"></span></p>
-</footer>
+    <!-- ABOUT SECTION -->
+    <section class="about">
+      <h2>About Uganda</h2>
+      <p>Capital: Kampala</p>
+      <p>Population: 45,000,000</p>
+      <p>Area: 241,038 km²</p>
+      <p>Languages: English, Luganda, Runyoro, Acholi, Kiswahili</p>
+      <p>Currency: Ugandan Shilling (UGX)</p>
+      <p>Calling code: +256</p>
+      <p>Time zone: EAC</p>
+      <p>Internet TLD: .ug</p>
+    </section>
+
+    <!-- WEATHER SECTION -->
+    <section class="weather">
+      <h2>Current Weather</h2>
+      <picture>
+        <source srcset="images/weather-small.webp" media="(max-width: 500px)" type="image/webp">
+        <source srcset="images/weather-medium.webp" media="(max-width: 1000px)" type="image/webp">
+        <img src="images/weather.png" alt="Weather icon" class="weather-img" loading="lazy">
+      </picture>
+      <p>Temperature: 75°F</p>
+      <p>Wind: 5 mph</p>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2026 Wycliff Byakagaba</p>
+      <p>Last Modified: <span id="lastModified"></span></p>
+    </div>
+  </footer>
 
 </body>
 </html>
