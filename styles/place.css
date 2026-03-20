@@ -31,12 +31,13 @@ body {
   display: block;
 }
 
+/* Semi-transparent blue overlay */
 .hero-overlay {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3));
+  background-color: rgba(0, 128, 255, 0.6); /* semi-transparent blue */
   padding: 2rem 2.5rem;
   border-radius: 10px;
   text-align: center;
@@ -48,10 +49,8 @@ body {
 }
 
 .hero-overlay p {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
 }
 
 .hero-line {
@@ -84,9 +83,10 @@ section h2 {
 
 /* FOOTER */
 footer {
-  background-color: #111;
-  border-top: 2px solid #444;
+  background-color: #1E90FF; /* solid blue footer */
+  color: #fff;
   padding: 1.5rem 2rem;
+  border-top: 2px solid #444;
 }
 
 .footer-content {
