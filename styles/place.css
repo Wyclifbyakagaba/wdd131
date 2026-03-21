@@ -48,7 +48,7 @@ section {
 picture img {
   width: 100%;
   height: auto;
-  display: none;
+  display: block;
 }
 
 /* WEATHER */
