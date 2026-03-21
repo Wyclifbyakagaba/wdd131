@@ -17,10 +17,9 @@
   <header>
     <section class="hero">
       <picture>
-        <source srcset="images/uganda-small" alt="Uganda-small.webp">
-        <source srcset="images/uganda-medium" alt="Uganda-medium.webp">
-        <img src="images/uganda-large.jpg" alt="Uganda landscape" class="hero-img" loading="lazy">
-      </picture>
+       <source srcset="images/uganda-small.webp" media="(max-width: 500px)" type="image/webp">
+       <source srcset="images/uganda-medium.webp" media="(max-width: 1000px)" type="image/webp">
+       <img src="images/uganda-large.jpg" alt="Uganda landscape"> 
       <div class="hero-overlay">
         <h1>Uganda</h1>
         <p>The Pearl of Africa</p>
@@ -49,7 +48,7 @@
        <h2>Weather</h2>
       <!-- SVG wrapper using your icon -->
       <svg class="weather-icon" viewBox="0 0 100 100" aria-label="weather icon">
-       <image href="images/weather.png" width="100" height="100" />
+       <image href="images/weather.svg" width="100" height="100" />
      </svg>
    <!---FIXED: SVG wrapper using YOUR icon -->
       
