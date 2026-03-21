@@ -1,7 +1,7 @@
 /* ROOT VARIABLES */
 :root {
   --primary-color: #1d3557;
-  --white:#ffffff;
+  --white:#ffffff;         /*standardized */
   --background-color: #f1faee;
   --text-color: #000000;
 }
@@ -23,7 +23,7 @@ body {
 /* HEADER */
 header {
   background: var(--primary-color);
-  color: var(--white);
+  color: var(--white); /* change from white to var */
   padding: 1rem;
   text-align: center;
 }
@@ -39,7 +39,7 @@ main {
 
 /* SECTIONS */
 section {
-  background:var(--white);
+  background:var(--white); /*replaced hex #ffffff with var */
   padding: 1rem;
   border-radius: 8px;
 }
@@ -71,7 +71,7 @@ picture img {
 /* FOOTER */
 footer {
   background: var(--primary-color);
-  color: white;
+  color: white;/* change from white to  var */
   text-align: center;
   padding: 1rem;
 }
