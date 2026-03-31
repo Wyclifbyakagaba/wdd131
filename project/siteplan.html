@@ -65,12 +65,9 @@
 <!-- Tourist Feedback Form -->
 <section>
   <h2>Tourist Feedback Form</h2>
-  <form method="get" action="review.html">
-<!-- Form contents (select, radio, checkboxes, date, textarea, button) -->
-  </form>
-</section>
 
-    <!-- Select -->
+  <form method="get" action="review.html">
+<!-- Select -->
     <label for="product">Which product are you interested in?</label>
     <select id="product" name="product" required>
       <option value="" disabled selected>Select a Product ...</option>
@@ -81,19 +78,20 @@
 
     <!-- Radio Buttons -->
     <p>Rate your interest in the following activities:</p>
+
     <input type="radio" id="activity1" name="activity" value="safari" required>
     <label for="activity1">Safari</label>
 
-    <input type="radio" id="activity2" name="activity" value="hiking" required>
+    <input type="radio" id="activity2" name="activity" value="hiking">
     <label for="activity2">Hiking</label>
 
-    <input type="radio" id="activity3" name="activity" value="culture" required>
+    <input type="radio" id="activity3" name="activity" value="culture">
     <label for="activity3">Cultural Tours</label>
 
-    <input type="radio" id="activity4" name="activity" value="beach" required>
+    <input type="radio" id="activity4" name="activity" value="beach">
     <label for="activity4">Beach</label>
 
-    <input type="radio" id="activity5" name="activity" value="adventure" required>
+    <input type="radio" id="activity5" name="activity" value="adventure">
     <label for="activity5">Adventure Sports</label>
 
     <!-- Date Input -->
@@ -102,24 +100,28 @@
 
     <!-- Checkboxes -->
     <p>Which of these services are you interested in?</p>
-    <input type="checkbox" id="service1" name="services" value="guide" required>
+
+    <input type="checkbox" id="service1" name="services" value="guide">
     <label for="service1">Tour Guide</label>
 
-    <input type="checkbox" id="service2" name="services" value="transport" required>
+    <input type="checkbox" id="service2" name="services" value="transport">
     <label for="service2">Transport</label>
 
-    <input type="checkbox" id="service3" name="services" value="accommodation" required>
+    <input type="checkbox" id="service3" name="services" value="accommodation">
     <label for="service3">Accommodation</label>
 
-    <input type="checkbox" id="service4" name="services" value="meals" required>
+    <input type="checkbox" id="service4" name="services" value="meals">
     <label for="service4">Meals</label>
 
     <!-- Textarea -->
     <label for="comments">Additional comments:</label>
-    <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments here"></textarea>
+    <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
 
     <!-- Submit Button -->
     <button type="submit">Submit</button>
+
+  </form>
+</section>
 
   </form>
 </section>
