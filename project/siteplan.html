@@ -63,30 +63,30 @@
   <form method="get" action="review.html">
 
     <!-- Select -->
-    <label for="country">Which country are you visiting from?</label>
-    <select id="country" name="country" required>
+    <label for="product">Which product are you interested in?</label>
+    <select id="product" name="product" required>
       <option value="" disabled selected>Select a Product ...</option>
-      <option value="uganda">Uganda</option>
-      <option value="kenya">Kenya</option>
-      <option value="tanzania">Tanzania</option>
+      <option value="safari">Safari</option>
+      <option value="hiking">Hiking</option>
+      <option value="culture">Cultural Tours</option>
     </select>
 
     <!-- Radio Buttons -->
     <p>Rate your interest in the following activities:</p>
-    <input type="radio" id="activity-safari" name="activity" value="safari" required>
-    <label for="activity-safari">Safari</label>
+    <input type="radio" id="activity1" name="activity" value="safari" required>
+    <label for="activity1">Safari</label>
 
-    <input type="radio" id="activity-hiking" name="activity" value="hiking" required>
-    <label for="activity-hiking">Hiking</label>
+    <input type="radio" id="activity2" name="activity" value="hiking">
+    <label for="activity2">Hiking</label>
 
-    <input type="radio" id="activity-culture" name="activity" value="culture" required>
-    <label for="activity-culture">Cultural Tours</label>
+    <input type="radio" id="activity3" name="activity" value="culture">
+    <label for="activity3">Cultural Tours</label>
 
-    <input type="radio" id="activity-beach" name="activity" value="beach" required>
-    <label for="activity-beach">Beach</label>
+    <input type="radio" id="activity4" name="activity" value="beach">
+    <label for="activity4">Beach</label>
 
-    <input type="radio" id="activity-adventure" name="activity" value="adventure" required>
-    <label for="activity-adventure">Adventure Sports</label>
+    <input type="radio" id="activity5" name="activity" value="adventure">
+    <label for="activity5">Adventure Sports</label>
 
     <!-- Date Input -->
     <label for="visit-date">Planned date of visit:</label>
@@ -94,18 +94,17 @@
 
     <!-- Checkboxes -->
     <p>Which of these services are you interested in?</p>
+    <input type="checkbox" id="service1" name="services" value="guide">
+    <label for="service1">Tour Guide</label>
 
-    <input type="checkbox" id="service-guide" name="services" value="guide">
-    <label for="service-guide">Tour Guide</label>
+    <input type="checkbox" id="service2" name="services" value="transport">
+    <label for="service2">Transport</label>
 
-    <input type="checkbox" id="service-transport" name="services" value="transport">
-    <label for="service-transport">Transport</label>
+    <input type="checkbox" id="service3" name="services" value="accommodation">
+    <label for="service3">Accommodation</label>
 
-    <input type="checkbox" id="service-accommodation" name="services" value="accommodation">
-    <label for="service-accommodation">Accommodation</label>
-
-    <input type="checkbox" id="service-meals" name="services" value="meals">
-    <label for="service-meals">Meals</label>
+    <input type="checkbox" id="service4" name="services" value="meals">
+    <label for="service4">Meals</label>
 
     <!-- Textarea -->
     <label for="comments">Additional comments:</label>
@@ -115,6 +114,7 @@
     <button type="submit">Submit</button>
 
   </form>
+</section>
 </section>
 
 <!-- Wireframes -->
