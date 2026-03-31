@@ -65,7 +65,7 @@
     <!-- Select -->
     <label for="country">Which country are you visiting from?</label>
     <select id="country" name="country" required>
-      <option value="">--Select your country--</option>
+      <option value="" disabled selected>Select a Product ...</option>
       <option value="uganda">Uganda</option>
       <option value="kenya">Kenya</option>
       <option value="tanzania">Tanzania</option>
@@ -73,11 +73,20 @@
 
     <!-- Radio Buttons -->
     <p>Rate your interest in the following activities:</p>
-    <label><input type="radio" name="activity" value="safari" required> Safari</label>
-    <label><input type="radio" name="activity" value="hiking"> Hiking</label>
-    <label><input type="radio" name="activity" value="culture"> Cultural Tours</label>
-    <label><input type="radio" name="activity" value="beach"> Beach</label>
-    <label><input type="radio" name="activity" value="adventure"> Adventure Sports</label>
+    <input type="radio" id="activity-safari" name="activity" value="safari" required>
+    <label for="activity-safari">Safari</label>
+
+    <input type="radio" id="activity-hiking" name="activity" value="hiking" required>
+    <label for="activity-hiking">Hiking</label>
+
+    <input type="radio" id="activity-culture" name="activity" value="culture" required>
+    <label for="activity-culture">Cultural Tours</label>
+
+    <input type="radio" id="activity-beach" name="activity" value="beach" required>
+    <label for="activity-beach">Beach</label>
+
+    <input type="radio" id="activity-adventure" name="activity" value="adventure" required>
+    <label for="activity-adventure">Adventure Sports</label>
 
     <!-- Date Input -->
     <label for="visit-date">Planned date of visit:</label>
@@ -85,10 +94,18 @@
 
     <!-- Checkboxes -->
     <p>Which of these services are you interested in?</p>
-    <label><input type="checkbox" name="services" value="guide"> Tour Guide</label>
-    <label><input type="checkbox" name="services" value="transport"> Transport</label>
-    <label><input type="checkbox" name="services" value="accommodation"> Accommodation</label>
-    <label><input type="checkbox" name="services" value="meals"> Meals</label>
+
+    <input type="checkbox" id="service-guide" name="services" value="guide">
+    <label for="service-guide">Tour Guide</label>
+
+    <input type="checkbox" id="service-transport" name="services" value="transport">
+    <label for="service-transport">Transport</label>
+
+    <input type="checkbox" id="service-accommodation" name="services" value="accommodation">
+    <label for="service-accommodation">Accommodation</label>
+
+    <input type="checkbox" id="service-meals" name="services" value="meals">
+    <label for="service-meals">Meals</label>
 
     <!-- Textarea -->
     <label for="comments">Additional comments:</label>
