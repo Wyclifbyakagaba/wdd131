@@ -1,77 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Website planning document for Explore Uganda tourism site">
-  <title>Site Plan - Explore Uganda</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Website planning document for Explore Uganda tourism site">
+<title>Site Plan - Explore Uganda</title>
 
-  <!-- Google Fonts preconnect -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<!-- Google Fonts preconnect -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- External CSS -->
-  <link rel="stylesheet" href="styles.css">
-  <!-- External JS -->
-<script src="scripts.js"></script>
+<!-- External CSS -->
+<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
 <header>
-  <h1>Explore Uganda - Site Plan</h1>
+  <h1>Explore Uganda Site Plan</h1>
 </header>
 
 <main>
 
-<!-- Form for review -->
-<form method="get" action="review.html">
+<!-- Site Name -->
+<section>
+  <h2>Site Name</h2>
+  <p><strong>Explore Uganda</strong></p>
+  <p>This name was chosen because it represents a tourism website that helps users discover beautiful places, attractions, and travel experiences in Uganda.</p>
+</section>
 
-  <!-- Select Example -->
-  <label for="region">Choose a region:</label>
-  <select id="region" name="region">
-    <option value="" disabled selected>Select a region</option>
-    <option value="central">Central Uganda</option>
-    <option value="east">Eastern Uganda</option>
-    <option value="north">Northern Uganda</option>
-    <option value="west">Western Uganda</option>
-  </select>
+<!-- Site Purpose -->
+<section>
+  <h2>Site Purpose</h2>
+  <p>The purpose of this website is to provide information about tourist destinations in Uganda, including national parks, cities, wildlife, and cultural sites. It will also guide visitors on travel tips and recommendations.</p>
+</section>
 
-  <!-- Radio buttons example -->
-  <p>Best type of tour:</p>
-  <label><input type="radio" name="tourType" value="safari"> Safari</label>
-  <label><input type="radio" name="tourType" value="cultural"> Cultural</label>
-  <label><input type="radio" name="tourType" value="adventure"> Adventure</label>
-  <label><input type="radio" name="tourType" value="nature"> Nature</label>
-  <label><input type="radio" name="tourType" value="historic"> Historic</label>
+<!-- Scenarios -->
+<section>
+  <h2>Scenarios</h2>
+  <ul>
+    <li>What are the best tourist attractions to visit in Uganda?</li>
+    <li>When is the best time to travel to Uganda?</li>
+  </ul>
+</section>
 
-  <!-- Date Input -->
-  <label for="visitDate">Planned Visit Date:</label>
-  <input type="date" id="visitDate" name="visitDate">
+<!-- Color Scheme -->
+<section>
+  <h2>Color Scheme</h2>
+  <p><strong>Green (#2e7d32):</strong> Used for header, headings, and footer.</p>
+  <p><strong>Yellow (#f4c430):</strong> Used for accents, borders, and highlights.</p>
+</section>
 
-  <!-- Checkbox Inputs -->
-  <p>Activities you are interested in:</p>
-  <label><input type="checkbox" name="activities" value="hiking"> Hiking</label>
-  <label><input type="checkbox" name="activities" value="boating"> Boating</label>
-  <label><input type="checkbox" name="activities" value="safari"> Safari</label>
-  <label><input type="checkbox" name="activities" value="culturalTours"> Cultural Tours</label>
+<!-- Typography -->
+<section>
+  <h2>Typography</h2>
+  <p><strong>Roboto:</strong> Used for all headings and body text for a clean and modern look.</p>
+</section>
 
-  <!-- Textarea -->
-  <label for="notes">Additional Notes:</label>
-  <textarea id="notes" name="notes" rows="4" cols="50" placeholder="Any special requests?"></textarea>
+<!-- Form -->
+<section>
+  <h2>Tourist Feedback Form</h2>
+  <form method="get" action="review.html">
 
-  <!-- Submit Button -->
-  <button type="submit">Submit</button>
+    <!-- Select -->
+    <label for="country">Which country are you visiting from?</label>
+    <select id="country" name="country" required>
+      <option value="">--Select your country--</option>
+      <option value="uganda">Uganda</option>
+      <option value="kenya">Kenya</option>
+      <option value="tanzania">Tanzania</option>
+    </select>
 
-</form>
+    <!-- Radio Buttons -->
+    <p>Rate your interest in the following activities:</p>
+    <label><input type="radio" name="activity" value="safari" required> Safari</label>
+    <label><input type="radio" name="activity" value="hiking"> Hiking</label>
+    <label><input type="radio" name="activity" value="culture"> Cultural Tours</label>
+    <label><input type="radio" name="activity" value="beach"> Beach</label>
+    <label><input type="radio" name="activity" value="adventure"> Adventure Sports</label>
+
+    <!-- Date Input -->
+    <label for="visit-date">Planned date of visit:</label>
+    <input type="date" id="visit-date" name="visit-date" required>
+
+    <!-- Checkboxes -->
+    <p>Which of these services are you interested in?</p>
+    <label><input type="checkbox" name="services" value="guide"> Tour Guide</label>
+    <label><input type="checkbox" name="services" value="transport"> Transport</label>
+    <label><input type="checkbox" name="services" value="accommodation"> Accommodation</label>
+    <label><input type="checkbox" name="services" value="meals"> Meals</label>
+
+    <!-- Textarea -->
+    <label for="comments">Additional comments:</label>
+    <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments here"></textarea>
+
+    <!-- Submit Button -->
+    <button type="submit">Submit</button>
+
+  </form>
+</section>
+
+<!-- Wireframes -->
+<section>
+  <h2>Wireframes</h2>
+  <h3>Mobile View</h3>
+  <pre>
+Header
+Menu
+Hero Image
+Content Section
+Form
+Footer
+  </pre>
+
+  <h3>Desktop View</h3>
+  <pre>
+Header
+Navigation Menu
+Hero Image
+Content in Columns
+Form
+Footer
+  </pre>
+</section>
 
 </main>
 
 <footer>
   <p>© 2026 | Explore Uganda | Byakagaba Wycliff</p>
 </footer>
-
 
 </body>
 </html>
