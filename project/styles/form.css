@@ -1,64 +1,32 @@
-/* Mobile-first base */
+/* Base styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 20px;
 }
 
-/* Center form */
 form {
   max-width: 600px;
   margin: auto;
 }
 
-/* Labels */
 label {
   display: block;
   margin-top: 10px;
 }
 
-/* Inputs */
-input,
-select,
-textarea {
+input, select, textarea {
   width: 100%;
   margin-bottom: 10px;
-  padding: 8px;
-  box-sizing: border-box;
-}
-
-/* Fieldsets */
-fieldset {
-  margin-top: 15px;
-  border: 1px solid #ccc;
-  padding: 10px;
-}
-
-/* Submit button */
-input[type="submit"] {
-  background-color: #2e7d32;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-input[type="submit"]:hover {
-  background-color: #1b5e20;
 }
 
 /* ✅ REQUIRED MEDIA QUERY */
 @media (min-width: 768px) {
+  body {
+    background-color: #f5f5f5;
+  }
+
   form {
     max-width: 800px;
-  }
-
-  fieldset {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-  }
-
-  fieldset label {
-    margin-right: 10px;
   }
 }
