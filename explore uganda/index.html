@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Byakagaba Wycliff">
+  <meta name="keywords" content="Uganda, tourism, attractions, wildlife, culture, travel">
+  <meta name="description" content="Explore Uganda - Discover tourist attractions, wildlife, and culture in Uganda.">
+  <title>Explore Uganda</title>
+  <link rel="stylesheet" href="styles/explore.css">
+
+  <link rel="preload" href="scripts/explore.js" as="script">
+</head>
+<body>
+  <header>
+    <h1>Explore Uganda</h1>
+    <nav>
+      <ul>
+        <li><a href="#attractions">Attractions</a></li>
+        <li><a href="#form">Tourist Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <img src="images/uganda1.jpg" alt="Uganda Landscape" loading="lazy">
+      <h2>Discover the Beauty of Uganda</h2>
+    </section>
+
+    <!-- Attractions Section -->
+    <section id="attractions">
+      <h2>Top Tourist Attractions</h2>
+      <div class="attraction-list">
+        <article>
+          <img src="images/uganda2.jpg" alt="Safari in Uganda" loading="lazy">
+          <h3>Savannah Safaris</h3>
+          <p>Experience wildlife and nature in Uganda's national parks.</p>
+        </article>
+        <article>
+          <img src="images/uganda3.jpg" alt="Hiking in Uganda" loading="lazy">
+          <h3>Mountain Hiking</h3>
+          <p>Explore scenic trails and breathtaking landscapes.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Feedback Form -->
+    <section id="form">
+      <h2>Tourist Feedback Form</h2>
+      <form id="touristForm">
+        <label for="product">Which product are you interested in?</label>
+        <select id="product" required>
+          <option value="">Select a Product ...</option>
+          <option value="safari">Safari</option>
+          <option value="hiking">Hiking</option>
+          <option value="cultural">Cultural Tours</option>
+          <option value="beach">Beach</option>
+          <option value="adventure">Adventure Sports</option>
+        </select>
+
+        <label for="date">Planned date of visit:</label>
+        <input type="date" id="date" required>
+
+        <label>Services interested in:</label>
+        <input type="checkbox" id="guide" value="Tour Guide"> Tour Guide
+        <input type="checkbox" id="transport" value="Transport"> Transport
+        <input type="checkbox" id="accommodation" value="Accommodation"> Accommodation
+        <input type="checkbox" id="meals" value="Meals"> Meals
+
+        <label for="comments">Additional comments:</label>
+        <textarea id="comments" placeholder="Write your comments here..."></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <div id="feedbackOutput"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 | Explore Uganda | Byakagaba Wycliff</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

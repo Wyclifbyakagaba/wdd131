@@ -1,0 +1,129 @@
+/* Colors & Typography */
+:root {
+  --green: #2e7d32;
+  --yellow: #f4c430;
+  --font: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: var(--font);
+  margin: 0;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: var(--green);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.hero h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--yellow);
+  font-size: 2rem;
+  background: rgba(0,0,0,0.5);
+  padding: 0.5rem 1rem;
+}
+
+/* Attractions */
+.attraction-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.attraction-list article {
+  border: 2px solid var(--yellow);
+  padding: 1rem;
+  max-width: 300px;
+  text-align: center;
+}
+
+.attraction-list img {
+  width: 100%;
+  height: auto;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+  padding: 2rem;
+  border: 2px solid var(--green);
+  border-radius: 8px;
+}
+
+form label {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+form input, form select, form textarea, form button {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+}
+
+form button {
+  background-color: var(--green);
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+form button:hover {
+  background-color: var(--yellow);
+  color: black;
+}
+
+/* Footer */
+footer {
+  background-color: var(--green);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .attraction-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
