@@ -19,7 +19,7 @@ if (productSelect) {
     productSelect.appendChild(option);
   });
 
-  // Count reviews ONLY when form is submitted
+  // Count reviews oNLY when form is submitted
   const form = document.querySelector("form");
 
   form.addEventListener("submit", () => {
