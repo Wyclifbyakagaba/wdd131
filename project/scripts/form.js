@@ -5,16 +5,37 @@ const products = [
   { id: 3, name: "Product C" }
 ];
 
-// Populate Product select
+// ===============================
+// FORM PAGE LOGIC
+// ===============================
 const productSelect = document.getElementById("product");
-products.forEach(product => {
-  const option = document.createElement("option");
-  option.value = product.id;
-  option.textContent = product.name;
-  productSelect.appendChild(option);
-});
 
-// Increment review counter using localStorage
-if (!localStorage.reviewCount) localStorage.reviewCount = 0;
-localStorage.reviewCount = Number(localStorage.reviewCount) + 1;
-console.log(`Reviews completed: ${localStorage.reviewCount}`);
+if (productSelect) {
+  // Populate dropdown ONLY if element exists
+  products.forEach(product => {
+    const option = document.createElement("option");
+    option.value = product.id;
+    option.textContent = product.name;
+    productSelect.appendChild(option);
+  });
+
+  // Count reviews ONLY when form is submitted
+  const form = document.querySelector("form");
+
+  form.addEventListener("submit", () => {
+    let count = Number(localStorage.getItem("reviewCount")) || 0;
+    localStorage.setItem("reviewCount", count + 1);
+  });
+}
+
+// ===============================
+// REVIEW PAGE LOGIC
+// ===============================
+const reviewDisplay = document.getElementById("reviewCount");
+
+if (reviewDisplay) {
+  const count = localStorage.getItem("reviewCount") || 0;
+  reviewDisplay.textContent = count;
+
+  console.log(`Reviews completed: ${count}`);
+}
