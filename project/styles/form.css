@@ -20,7 +20,7 @@ input, select, textarea {
   margin-bottom: 10px;
 }
 
-/* ✅ REQUIRED MEDIA QUERY */
+/*  required media query */
 @media (min-width: 768px) {
   body {
     background-color: #f5f5f5;

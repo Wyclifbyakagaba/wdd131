@@ -6,7 +6,7 @@ const products = [
 ];
 
 // ===============================
-// FORM PAGE LOGIC
+// form page logic
 // ===============================
 const productSelect = document.getElementById("product");
 
@@ -29,7 +29,7 @@ if (productSelect) {
 }
 
 // ===============================
-// REVIEW PAGE LOGIC
+// review page logic
 // ===============================
 const reviewDisplay = document.getElementById("reviewCount");
 
