@@ -3,57 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Feedback</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/styles.css">
-</head>
+  <script src="js/script.js"></script>
 
+  <title>Review Form</title>
+</head>
 <body>
 
 <header>
-  <h1>Tourist Feedback</h1>
+  <h1>Travel Review Form</h1>
 </header>
 
-<main>
+<!-- ✅ SINGLE FORM (REQUIRED FIX) -->
+<form method="get" action="review.html">
 
-<form id="feedbackForm">
+  <!-- SELECT -->
+  <label for="destination">Choose Destination</label>
+  <select id="destination" name="destination" required>
+    <option value="">-- Select Destination --</option>
+    <option value="murchison">Murchison Falls</option>
+    <option value="bwindi">Bwindi Forest</option>
+    <option value="lake">Lake Victoria</option>
+  </select>
 
-<label for="product">Product</label>
-<select id="product" name="product" required>
-  <option value="">Select a Product...</option>
-  <option>Safari</option>
-  <option>Hiking</option>
-  <option>City Tour</option>
-</select>
+  <!-- DATE -->
+  <label for="visitDate">Visit Date</label>
+  <input type="date" id="visitDate" name="visitDate" required>
 
-<p>Activities:</p>
-<label><input type="checkbox" value="Safari"> Safari</label>
-<label><input type="checkbox" value="Hiking"> Hiking</label>
-<label><input type="checkbox" value="Culture"> Cultural Tours</label>
-<label><input type="checkbox" value="Beach"> Beach</label>
+  <!-- RADIO (5 REQUIRED) -->
+  <p>Rate Your Experience</p>
 
-<label for="date">Visit Date</label>
-<input type="date" id="date" required>
+  <label><input type="radio" name="rating" value="1" required> 1</label>
+  <label><input type="radio" name="rating" value="2"> 2</label>
+  <label><input type="radio" name="rating" value="3"> 3</label>
+  <label><input type="radio" name="rating" value="4"> 4</label>
+  <label><input type="radio" name="rating" value="5"> 5</label>
 
-<p>Services:</p>
-<label><input type="checkbox" value="Guide"> Tour Guide</label>
-<label><input type="checkbox" value="Transport"> Transport</label>
+  <!-- CHECKBOX (4 REQUIRED) -->
+  <p>What did you enjoy?</p>
 
-<label for="comments">Comments</label>
-<textarea id="comments"></textarea>
+  <label><input type="checkbox" name="enjoy" value="wildlife"> Wildlife</label>
+  <label><input type="checkbox" name="enjoy" value="culture"> Culture</label>
+  <label><input type="checkbox" name="enjoy" value="food"> Food</label>
+  <label><input type="checkbox" name="enjoy" value="scenery"> Scenery</label>
 
-<button type="submit">Submit</button>
+  <!-- TEXTAREA -->
+  <label for="comment">Your Review</label>
+  <textarea id="comment" name="comment" rows="5" required></textarea>
+
+  <!-- SUBMIT -->
+  <button type="submit">Submit Review</button>
 
 </form>
 
-<p id="message"></p>
 
-</main>
-
-<footer>
-  <p>© 2026 | Explore Uganda</p>
-</footer>
-
-<script src="js/script.js"></script>
 </body>
 </html>
