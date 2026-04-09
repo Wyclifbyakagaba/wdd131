@@ -1,156 +1,16 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="author" content="Byakagaba Wycliff">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Website planning document for Explore Uganda tourism site">
-<title>Site Plan - Explore Uganda</title>
-
-<!-- google Fonts preconnect -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
-<!-- external CSS -->
-<link rel="stylesheet" href="project/styles/siteplan.css">
-
-<script src="project/scripts/siteplan.js" defer></script>
+  <meta charset="UTF-8">
+  <title>Review Submitted</title>
 </head>
 <body>
-
-<header>
-  <h1>Explore Uganda Site Plan</h1>
-</header>
-
-<main>
-
-<!-- site name -->
-<section>
-  <h2>Site Name</h2>
-  <p><strong>Explore Uganda</strong></p>
-  <p>This name was chosen because it represents a tourism website that helps users discover beautiful places, attractions, and travel experiences in Uganda.</p>
-</section>
-
-<!-- site purpose -->
-<section>
-  <h2>Site Purpose</h2>
-  <p>The purpose of this website is to provide information about tourist destinations in Uganda, including national parks, cities, wildlife, and cultural sites. It will also guide visitors on travel tips and recommendations.</p>
-</section>
-
-<!-- site scenarios -->
-<section>
-  <h2>Scenarios</h2>
-  <ul>
-    <li>What are the best tourist attractions to visit in Uganda?</li>
-    <li>When is the best time to travel to Uganda?</li>
-  </ul>
-</section>
-
-<!-- color scheme -->
-<section>
-  <h2>Color Scheme</h2>
-  <p><strong>Green (#2e7d32):</strong> Used for header, headings, and footer.</p>
-  <p><strong>Yellow (#f4c430):</strong> Used for accents, borders, and highlights.</p>
-</section>
-
-<!-- typography -->
-<section>
-  <h2>Typography</h2>
-  <p><strong>Roboto:</strong> Used for all headings and body text for a clean and modern look.</p>
-</section>
-
-<!-- tourist feedback form -->
-<section>
-  <h2>Tourist Feedback Form</h2>
-
-  <form method="get" action="review.html">
-<!-- Select -->
-    <label for="product">Which product are you interested in?</label>
-    <select id="product" name="product" required>
-      <option value="" disabled selected>Select a Product ...</option>
-      <option value="safari">Safari</option>
-      <option value="hiking">Hiking</option>
-      <option value="culture">Cultural Tours</option>
-    </select>
-
-    <!-- radio buttons -->
-    <p>Rate your interest in the following activities:</p>
-
-    <input type="radio" id="activity1" name="activity" value="safari" required>
-    <label for="activity1">Safari</label>
-
-    <input type="radio" id="activity2" name="activity" value="hiking" required>
-    <label for="activity2">Hiking</label>
-
-    <input type="radio" id="activity3" name="activity" value="culture" required>
-    <label for="activity3">Cultural Tours</label>
-
-    <input type="radio" id="activity4" name="activity" value="beach" required>
-    <label for="activity4">Beach</label>
-
-    <input type="radio" id="activity5" name="activity" value="adventure" required>
-    <label for="activity5">Adventure Sports</label>
-
-    <!-- date input -->
-    <label for="visit-date">Planned date of visit:</label>
-    <input type="date" id="visit-date" name="visit-date" required>
-
-    <!-- checkboxes -->
-    <p>Which of these services are you interested in?</p>
-
-    <input type="checkbox" id="service1" name="services" value="guide">
-    <label for="service1">Tour Guide</label>
-
-    <input type="checkbox" id="service2" name="services" value="transport">
-    <label for="service2">Transport</label>
-
-    <input type="checkbox" id="service3" name="services" value="accommodation">
-    <label for="service3">Accommodation</label>
-
-    <input type="checkbox" id="service4" name="services" value="meals">
-    <label for="service4">Meals</label>
-
-    <!-- textarea -->
-    <label for="comments">Additional comments:</label>
-    <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
-
-    <!-- submit button -->
-    <button type="submit">Submit</button>
- </form>
-</section>
-
-
-
-<!-- wireframes -->
-<section>
-  <h2>wireframes</h2>
-  <h3>mobile View</h3>
-  <pre>
-header
-menu
-hero image
-content Section
-form
-footer
-  </pre>
-
-  <h3>desktop View</h3>
-  <pre>
-header
-navigation Menu
-hero image
-content in Columns
-form
-footer
-  </pre>
-</section>
-
-</main>
-
-<footer>
-  <p>© 2026 | Explore Uganda | Byakagaba Wycliff</p>
-</footer>
-
+  <h1>Thank you for your review!</h1>
+  <p>Your review has been submitted successfully.</p>
+   <p>Total reviews completed: <span id="reviewCount"></span></p>
+  <script>
+  const count = localStorage.getItem("reviewCount") || 0;
+  document.getElementById("reviewCount").textContent = count;
+</script>
 </body>
 </html>
