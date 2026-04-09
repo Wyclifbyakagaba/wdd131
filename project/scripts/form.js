@@ -31,11 +31,11 @@ if (productSelect) {
 // ===============================
 // review page logic
 // ===============================
-const reviewDisplay = document.getElementById("reviewCount");
+const reviewdisplay = document.getElementById("reviewCount");
 
-if (reviewDisplay) {
+if (reviewdisplay) {
   const count = localStorage.getItem("reviewCount") || 0;
-  reviewDisplay.textContent = count;
+  reviewdisplay.textContent = count;
 
   console.log(`Reviews completed: ${count}`);
 }
