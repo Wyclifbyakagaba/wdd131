@@ -3,87 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Byakagaba Wycliff">
-  <meta name="keywords" content="Uganda, tourism, attractions, wildlife, culture, travel">
-  <meta name="description" content="Explore Uganda - Discover tourist attractions, wildlife, and culture in Uganda.">
+
+  <meta name="description" content="Explore Uganda tourism destinations, wildlife, and culture.">
+
   <title>Explore Uganda</title>
-  <link rel="stylesheet" href="styles/explore.css">
 
-  <link rel="preload" href="scripts/explore.js" as="script">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-  <header>
-    <h1>Explore Uganda</h1>
-    <nav>
-      <ul>
-        <li><a href="#attractions">Attractions</a></li>
-        <li><a href="#form">Tourist Feedback</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
-    <!-- Hero Section -->
-    <section class="hero">
-      <img src="images/uganda1.jpg" alt="Uganda Landscape" loading="lazy">
-      <h2>Discover the Beauty of Uganda</h2>
-    </section>
+<header>
+  <h1>Explore Uganda</h1>
+  <nav>
+    <ul id="navMenu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="attractions.html">Attractions</a></li>
+      <li><a href="contact.html">Tourist Feedback</a></li>
+      <li><a href="references.html">References</a></li>
+    </ul>
+  </nav>
+</header>
 
-    <!-- Attractions Section -->
-    <section id="attractions">
-      <h2>Top Tourist Attractions</h2>
-      <div class="attraction-list">
-        <article>
-          <img src="images/uganda2.jpg" alt="Safari in Uganda" loading="lazy">
-          <h3>Savannah Safaris</h3>
-          <p>Experience wildlife and nature in Uganda's national parks.</p>
-        </article>
-        <article>
-          <img src="images/uganda3.jpg" alt="Hiking in Uganda" loading="lazy">
-          <h3>Mountain Hiking</h3>
-          <p>Explore scenic trails and breathtaking landscapes.</p>
-        </article>
-      </div>
-    </section>
+<section class="hero">
+  <h2>Discover the Beauty of Uganda</h2>
+</section>
 
-    <!-- Feedback Form -->
-    <section id="form">
-      <h2>Tourist Feedback Form</h2>
-      <form id="touristForm">
-        <label for="product">Which product are you interested in?</label>
-        <select id="product" required>
-          <option value="">Select a Product ...</option>
-          <option value="safari">Safari</option>
-          <option value="hiking">Hiking</option>
-          <option value="cultural">Cultural Tours</option>
-          <option value="beach">Beach</option>
-          <option value="adventure">Adventure Sports</option>
-        </select>
+<main>
 
-        <label for="date">Planned date of visit:</label>
-        <input type="date" id="date" required>
+<section>
+  <h2>Travel Questions</h2>
+  <p><strong>What are the best tourist attractions?</strong> Uganda has national parks, wildlife, mountains and lakes.</p>
+  <p><strong>When is the best time to travel?</strong> Dry seasons (June–August, December–February).</p>
+</section>
 
-        <label>Services interested in:</label>
-        <input type="checkbox" id="guide" value="Tour Guide"> Tour Guide
-        <input type="checkbox" id="transport" value="Transport"> Transport
-        <input type="checkbox" id="accommodation" value="Accommodation"> Accommodation
-        <input type="checkbox" id="meals" value="Meals"> Meals
+<section class="grid">
+  <div class="card">
+    <img src="images/uganda1.jpg" loading="lazy" alt="Safari">
+    <h3>Savannah Safaris</h3>
+    <p>Experience wildlife in national parks.</p>
+  </div>
 
-        <label for="comments">Additional comments:</label>
-        <textarea id="comments" placeholder="Write your comments here..."></textarea>
+  <div class="card">
+    <img src="images/uganda2.jpg" loading="lazy" alt="Hiking">
+    <h3>Mountain Hiking</h3>
+    <p>Explore scenic trails and landscapes.</p>
+  </div>
 
-        <button type="submit">Submit</button>
-      </form>
+  <div class="card">
+    <img src="images/uganda3.jpg" loading="lazy" alt="Culture">
+    <h3>Cultural Tours</h3>
+    <p>Discover traditions and local communities.</p>
+  </div>
+</section>
 
-      <div id="feedbackOutput"></div>
-    </section>
-  </main>
+</main>
 
-  <footer>
-    <p>© 2026 | Explore Uganda | Byakagaba Wycliff</p>
+<footer>
+  <p>© 2026 | Explore Uganda | Byakagaba Wycliff</p>
+</footer>
 
-  </footer>
-
-
+<script src="js/script.js"></script>
 </body>
 </html>
