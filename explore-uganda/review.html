@@ -2,15 +2,78 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Review Submitted</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <title>Product Review Form</title>
 </head>
+
 <body>
 
-<h1>Thank you for your review!</h1>
-<p>Your submission has been received successfully.</p>
+  <!-- ✅ REQUIRED FORM -->
+  <form method="get" action="review.html">
 
-<a href="index.html">Back to Home</a>
+    <!-- ✅ SELECT -->
+    <label for="product">Choose a product:</label>
+    <select id="product" name="product" required>
+      <option value="">-- Select a product --</option>
+      <option value="phone">Phone</option>
+      <option value="laptop">Laptop</option>
+      <option value="tv">TV</option>
+    </select>
+
+    <br><br>
+
+    <!-- ✅ RADIO BUTTONS (5 REQUIRED) -->
+    <p>Rating:</p>
+
+    <input type="radio" id="r1" name="rating" value="1">
+    <label for="r1">1</label>
+
+    <input type="radio" id="r2" name="rating" value="2">
+    <label for="r2">2</label>
+
+    <input type="radio" id="r3" name="rating" value="3">
+    <label for="r3">3</label>
+
+    <input type="radio" id="r4" name="rating" value="4">
+    <label for="r4">4</label>
+
+    <input type="radio" id="r5" name="rating" value="5">
+    <label for="r5">5</label>
+
+    <br><br>
+
+    <!-- ✅ DATE INPUT -->
+    <label for="date">Review Date:</label>
+    <input type="date" id="date" name="date">
+
+    <br><br>
+
+    <!-- ✅ CHECKBOXES (at least 4) -->
+    <p>Features you liked:</p>
+
+    <input type="checkbox" id="f1" name="features" value="design">
+    <label for="f1">Design</label>
+
+    <input type="checkbox" id="f2" name="features" value="performance">
+    <label for="f2">Performance</label>
+
+    <input type="checkbox" id="f3" name="features" value="battery">
+    <label for="f3">Battery</label>
+
+    <input type="checkbox" id="f4" name="features" value="price">
+    <label for="f4">Price</label>
+
+    <br><br>
+
+    <!-- ✅ TEXTAREA -->
+    <label for="review">Your Review:</label><br>
+    <textarea id="review" name="review" rows="4" cols="40"></textarea>
+
+    <br><br>
+
+    <!-- ✅ SUBMIT BUTTON -->
+    <button type="submit">Submit Review</button>
+
+  </form>
 
 </body>
 </html>
