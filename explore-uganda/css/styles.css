@@ -1,49 +1,69 @@
+/* Colors */
+:root {
+  --green: #2e7d32;
+  --yellow: #f4c430;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
-  background: #f5fff5;
-  color: #1b3d1b;
+  line-height: 1.6;
 }
 
+
+/* Header */
 header {
-  background: #1f7a1f;
-  color: yellow;
-  padding: 15px;
+  background: var(--green);
+  color: white;
+  padding: 1rem;
   text-align: center;
 }
 
 nav a {
   color: white;
-  margin: 10px;
+  margin:0 10px;
   text-decoration: none;
 }
 
 .hero {
-  padding: 40px;
-  background: yellow;
-  color: green;
+  padding: 2rem;
+  background: var(--yellow);
+  color: var(--green);
   text-align: center;
 }
-
+/* Grid layout */
 .grid {
-  display: flex;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
   padding: 20px;
 }
 
+/* Cards */
 .card {
-  background: #e6ffe6;
-  padding: 20px;
-  border: 2px solid green;
-  flex: 1;
+  border: 2px solid var(--yellow);
+  padding: 15px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+/* Images */
+.card img {
+  width: 100%;
+  border-radius: 5px;
 }
 
 form {
-  max-width: 500px;
-  margin: 20px auto;
-  background: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   padding: 20px;
-  border: 2px solid green;
+
+}
+
+fieldset {
+  border: 2px solid var(--yellow);
+  padding: 10px;
 }
 
 input, select, textarea {
