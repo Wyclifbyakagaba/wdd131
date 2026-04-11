@@ -9,17 +9,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/styles.css">
-  <script src="js/script.js"></script>
+  <script src="js/script.js" defer></script>
 
-  <title>Review Form</title>
+  <title>Contact / Review Form</title>
 </head>
+
 <body>
 
 <header>
   <h1>Travel Review Form</h1>
 </header>
 
-<!-- ✅ SINGLE FORM (REQUIRED FIX) -->
+<!-- FORM (ONLY REQUIRED FIX) -->
 <form method="get" action="review.html">
 
   <!-- SELECT -->
@@ -35,7 +36,7 @@
   <label for="visitDate">Visit Date</label>
   <input type="date" id="visitDate" name="visitDate" required>
 
-  <!-- RADIO (5 REQUIRED) -->
+  <!-- RADIO -->
   <p>Rate Your Experience</p>
 
   <label><input type="radio" name="rating" value="1" required> 1</label>
@@ -44,7 +45,7 @@
   <label><input type="radio" name="rating" value="4"> 4</label>
   <label><input type="radio" name="rating" value="5"> 5</label>
 
-  <!-- CHECKBOX (4 REQUIRED) -->
+  <!-- CHECKBOX -->
   <p>What did you enjoy?</p>
 
   <label><input type="checkbox" name="enjoy" value="wildlife"> Wildlife</label>
@@ -58,9 +59,5 @@
 
   <!-- SUBMIT -->
   <button type="submit">Submit Review</button>
-
-</form>
-
-
-</body>
+</form></body>
 </html>

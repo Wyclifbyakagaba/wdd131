@@ -2,78 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Product Review Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+
+  <title>Review Submitted</title>
 </head>
 
 <body>
 
-  <!-- ✅ REQUIRED FORM -->
-  <form method="get" action="review.html">
+<header>
+  <h1>Thank You!</h1>
+</header>
 
-    <!-- ✅ SELECT -->
-    <label for="product">Choose a product:</label>
-    <select id="product" name="product" required>
-      <option value="">-- Select a product --</option>
-      <option value="phone">Phone</option>
-      <option value="laptop">Laptop</option>
-      <option value="tv">TV</option>
-    </select>
+<main>
+  <h2>Your Review Has Been Submitted</h2>
+  <p>We appreciate your feedback about Uganda tourism experiences.</p>
 
-    <br><br>
-
-    <!-- ✅ RADIO BUTTONS (5 REQUIRED) -->
-    <p>Rating:</p>
-
-    <input type="radio" id="r1" name="rating" value="1">
-    <label for="r1">1</label>
-
-    <input type="radio" id="r2" name="rating" value="2">
-    <label for="r2">2</label>
-
-    <input type="radio" id="r3" name="rating" value="3">
-    <label for="r3">3</label>
-
-    <input type="radio" id="r4" name="rating" value="4">
-    <label for="r4">4</label>
-
-    <input type="radio" id="r5" name="rating" value="5">
-    <label for="r5">5</label>
-
-    <br><br>
-
-    <!-- ✅ DATE INPUT -->
-    <label for="date">Review Date:</label>
-    <input type="date" id="date" name="date">
-
-    <br><br>
-
-    <!-- ✅ CHECKBOXES (at least 4) -->
-    <p>Features you liked:</p>
-
-    <input type="checkbox" id="f1" name="features" value="design">
-    <label for="f1">Design</label>
-
-    <input type="checkbox" id="f2" name="features" value="performance">
-    <label for="f2">Performance</label>
-
-    <input type="checkbox" id="f3" name="features" value="battery">
-    <label for="f3">Battery</label>
-
-    <input type="checkbox" id="f4" name="features" value="price">
-    <label for="f4">Price</label>
-
-    <br><br>
-
-    <!-- ✅ TEXTAREA -->
-    <label for="review">Your Review:</label><br>
-    <textarea id="review" name="review" rows="4" cols="40"></textarea>
-
-    <br><br>
-
-    <!-- ✅ SUBMIT BUTTON -->
-    <button type="submit">Submit Review</button>
-
-  </form>
+  <a href="index.html">Return to Home</a>
+</main>
 
 </body>
 </html>
