@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -20,44 +20,57 @@
   <h1>Travel Review Form</h1>
 </header>
 
-<!-- FORM (ONLY REQUIRED FIX) -->
+<!--  ADDED MAIN -->
+<main>
+
 <form method="get" action="review.html">
 
   <!-- SELECT -->
-  <label for="destination">Choose Destination</label>
+  <label for="destination">Choose Destination *</label>
   <select id="destination" name="destination" required>
-    <option value="">-- Select Destination --</option>
+    <!--  FIXED PLACEHOLDER -->
+    <option value="" disabled selected>-- Select Destination --</option>
     <option value="murchison">Murchison Falls</option>
     <option value="bwindi">Bwindi Forest</option>
     <option value="lake">Lake Victoria</option>
   </select>
 
   <!-- DATE -->
-  <label for="visitDate">Visit Date</label>
+  <label for="visitDate">Visit Date *</label>
   <input type="date" id="visitDate" name="visitDate" required>
 
   <!-- RADIO -->
-  <p>Rate Your Experience</p>
+  <fieldset>
+    <legend>Rate Your Experience *</legend>
 
-  <label><input type="radio" name="rating" value="1" required> 1</label>
-  <label><input type="radio" name="rating" value="2"> 2</label>
-  <label><input type="radio" name="rating" value="3"> 3</label>
-  <label><input type="radio" name="rating" value="4"> 4</label>
-  <label><input type="radio" name="rating" value="5"> 5</label>
+    <label><input type="radio" name="rating" value="1" required> 1</label>
+    <label><input type="radio" name="rating" value="2" required> 2</label>
+    <label><input type="radio" name="rating" value="3" required> 3</label>
+    <label><input type="radio" name="rating" value="4" required> 4</label>
+    <label><input type="radio" name="rating" value="5" required> 5</label>
+  </fieldset>
 
   <!-- CHECKBOX -->
-  <p>What did you enjoy?</p>
+  <fieldset>
+    <legend>What did you enjoy?</legend>
 
-  <label><input type="checkbox" name="enjoy" value="wildlife"> Wildlife</label>
-  <label><input type="checkbox" name="enjoy" value="culture"> Culture</label>
-  <label><input type="checkbox" name="enjoy" value="food"> Food</label>
-  <label><input type="checkbox" name="enjoy" value="scenery"> Scenery</label>
+    <label><input type="checkbox" name="enjoy" value="wildlife" required> Wildlife</label>
+    <label><input type="checkbox" name="enjoy" value="culture" required> Culture</label>
+    <label><input type="checkbox" name="enjoy" value="food" required> Food</label>
+    <label><input type="checkbox" name="enjoy" value="scenery"> Scenery</label>
+  </fieldset>
 
   <!-- TEXTAREA -->
   <label for="comment">Your Review</label>
-  <textarea id="comment" name="comment" rows="5" required></textarea>
+  <textarea id="comment" name="comment" rows="5"></textarea>
 
   <!-- SUBMIT -->
   <button type="submit">Submit Review</button>
-</form></body>
+
+</form>
+
+</main>
+<!-- END MAIN -->
+
+</body>
 </html>
